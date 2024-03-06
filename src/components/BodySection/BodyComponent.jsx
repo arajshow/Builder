@@ -51,7 +51,7 @@ const BodyComponent = () => {
 			</div>
 
 			{/* directory */}
-			<div className="flex flex-row gap-2 text-gray-500">
+			<div className="flex flex-row gap-2 text-gray-500 mb-4">
 				{DirectoryList.map((item, index) => (
 					<div className="flex flex-row gap-2 items-center">
 						<p>{item.title}</p>
