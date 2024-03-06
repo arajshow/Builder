@@ -18,7 +18,7 @@ import SmallCardSection from "./SmallCardSection";
 
 const BodyComponent = () => {
 	return (
-		<div className="w-8/12 mt-[32px] mx-auto flex flex-col gap-4 text-black">
+		<div className="w-8/12 mt-[32px] mx-auto flex flex-col bg-whiteBg gap-4 text-black">
 			{/* heading */}
 			<p className="text-[48px] font-inter w-full">
 				Best Website builders in the US
@@ -71,11 +71,24 @@ const BodyComponent = () => {
 			<SmallCardSection />
 
 			{/* ending */}
-			<div className="flex flex-row justify-between ">
-				<p className="text-[32px] w-[35%] text-slate-600 font-normal">
+			<div className="flex flex-row justify-between items-center my-12">
+				<p className="text-[32px] w-[40%] text-slate-600 font-normal">
 					Sign up and get exclusive special deals
 				</p>
-				<div>Signup</div>
+				<div className="flex flex-row gap-0 w-[45%]">
+					<form>
+						<input
+							type="search"
+							className=" bg-white w-full text-black text-lg rounded-l-lg p-2"
+						/>
+					</form>
+					<button
+						type="submit"
+						className=" bg-blue-600 text-md h-[44px] w-[35%] text-white rounded-r-lg"
+					>
+						Sign Up
+					</button>
+				</div>
 			</div>
 		</div>
 	);
