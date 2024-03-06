@@ -63,7 +63,7 @@ const BodyComponent = () => {
 			{/* Major Card */}
 			<BigCardSection />
 
-			<p className="text-[32px] font-inter w-full">
+			<p className="text-[32px] font-inter w-full mt-10">
 				Related deals you might like for
 			</p>
 

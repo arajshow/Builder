@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactStars from "react-rating-stars-component";
 import { CardList } from "../../data/card-list";
 import { LuTrophy } from "react-icons/lu";
 import { IoDiamondOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
 import pc from "../../assets/pc.png";
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const BigCardSection = () => {
+	const [fullStars, setFullStars] = useState(4);
+	const [hasHalfStar, setHasHalfStar] = useState(4);
+
 	return (
 		<div className="flex flex-col gap-10 w-full mx-auto">
 			{CardList.map((item) => (
@@ -60,10 +66,19 @@ const BigCardSection = () => {
 
 					{/* side section */}
 					<div className="w-[18%] flex flex-col items-center justify-between">
-						<div className=" bg-blue-300 flex flex-col justify-center text-blue-900 rounded-b-lg w-[118px] p-3 items-center">
+						<div className=" bg-blue-300 flex flex-col justify-center text-blue-900 rounded-b-lg w-[148px] p-3 items-center">
 							<p className="text-3xl mb-3">{item.points}</p>
 							<p>{item.pointsTitle}</p>
-							<p>Rating</p>
+							<ReactStars
+								count={5}
+								value={item.id === "1" || item.id === "2" ? 5 : 4}
+								size={20}
+								edit={false}
+								activeColor="#ffd700"
+								color="#ffffff"
+								emptyIcon={<FaRegStar />}
+								fullIcon={<FaStar />}
+							/>
 						</div>
 						<div className="w-full mx-auto flex  justify-center mb-2 bg-blue-600 items-center text-white rounded-lg p-2">
 							{" "}
