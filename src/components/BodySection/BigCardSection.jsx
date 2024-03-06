@@ -31,7 +31,7 @@ const BigCardSection = () => {
 					)}
 
 					{/* rank */}
-					<div className="absolute top-[10%] -left-[1.5em] w-12 h-12 bg-gray-100 border flex justify-center items-center border-gray-300 text-black rounded-full">
+					<div className="absolute top-[10%] -left-[1.5em] w-12 h-12 bg-gray-25 border flex justify-center items-center border-gray-300 text-black rounded-full">
 						{item.id}
 					</div>
 

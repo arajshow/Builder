@@ -5,7 +5,7 @@ import Navbar from './components/core/Navbar';
 
 function App() {
   return (
-    <div className="w-screen min-h-screen bg-whiteBg text-black flex flex-col font-inter">
+    <div className="w-screen min-h-screen bg-whiteBg text-white flex flex-col font-inter">
       <Navbar />
       <BodyComponent />
       <Footer />                   

@@ -9,7 +9,7 @@ import { IoSearch } from "react-icons/io5";
 const Navbar = () => {
 	return (
 		<div
-			className={`flex relative h-[72px] items-center justify-center gap-12 border-b-[1px] border-b-slate-700 bg-blackBg transition-all duration-200`}
+			className={`flex text-white relative h-[72px] items-center justify-center gap-12 border-b-[1px] border-b-slate-700 bg-blackBg transition-all duration-200`}
 		>
 			<div className="md:w-auto md:mx-0 w-[20%] mx-auto sm:block hidden">
 				<form className="relative md:block hidden">

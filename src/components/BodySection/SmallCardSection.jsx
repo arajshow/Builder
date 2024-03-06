@@ -13,7 +13,7 @@ const totalCard = [1, 2, 3, 4, 5];
 
 const SmallCardSection = () => {
 	return (
-		<div className="my-[50px] h-auto max-w-maxContentTab lg:max-w-maxContent">
+		<div className="my-[50px] flex h-auto max-w-maxContentTab lg:max-w-maxContent">
 			<Swiper
 				slidesPerView={3}
 				spaceBetween={25}
