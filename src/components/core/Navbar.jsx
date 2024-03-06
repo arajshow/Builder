@@ -21,7 +21,7 @@ const Navbar = () => {
 					{/* <IoSearch className="absolute text-slate-400 text-3xl top-[4px] left-[5px]" /> */}
 				</form>
 				<div className="md:hidden block ml-[10%] items-center text-slate-300 hover:scale-105 transition-all duration-200">
-					<FaAngleDown />
+					<IoSearch className=" text-2xl" />
 				</div>
 			</div>
 

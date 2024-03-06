@@ -44,7 +44,7 @@ const BodyComponent = () => {
 			</div>
 
 			{/* list-section */}
-			<div className="flex flex-row gap-3">
+			<div className="md:flex md:flex-row hidden gap-3">
 				{ToolLists.map((item, index) => (
 					<ToolBox data={item.title} />
 				))}
@@ -72,10 +72,10 @@ const BodyComponent = () => {
 
 			{/* ending */}
 			<div className="flex flex-row justify-between items-center my-12">
-				<p className="text-[32px] w-[40%] text-slate-600 font-normal">
+				<p className="text-[32px] md:w-[40%] w-full text-slate-600 font-normal">
 					Sign up and get exclusive special deals
 				</p>
-				<div className="flex flex-row gap-0 w-[45%]">
+				<div className="md:flex md:flex-row hidden gap-0 w-[45%]">
 					<form>
 						<input
 							type="search"

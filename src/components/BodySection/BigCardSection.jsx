@@ -36,7 +36,7 @@ const BigCardSection = () => {
 					</div>
 
 					{/* image */}
-					<div className="flex flex-col justify-center gap-2 items-center w-[25%]">
+					<div className="md:flex md:flex-col hidden justify-center gap-2 items-center w-[25%]">
 						<img
 							src={pc}
 							alt="pc"
@@ -46,7 +46,7 @@ const BigCardSection = () => {
 					</div>
 
 					{/* main body section */}
-					<div className="lg:w-[50%] w-[75%] mt-5 flex flex-col gap-2">
+					<div className="lg:w-[50%] md:w-[75%] w-[90%] mt-5 flex flex-col gap-2 mx-auto lg:pl-0 pl-2">
 						<p>
 							<span className="font-semibold">{item.heading}</span>
 							{item.id === "4" ? (
@@ -98,8 +98,8 @@ const BigCardSection = () => {
 					</div>
 
 					{/* side section */}
-					<div className="w-[18%] lg:flex lg:flex-col hidden items-center justify-between">
-						<div className=" bg-blue-300 flex flex-col justify-center text-blue-900 rounded-b-lg w-[148px] p-3 items-center">
+					<div className="w-[18%] lg:flex lg:flex-col hidden items-center mx-auto justify-between">
+						<div className=" bg-blue-300 flex flex-col justify-center px-2 text-blue-900 rounded-b-lg w-[148px] p-3 items-center">
 							<p className="text-3xl mb-3">{item.points}</p>
 							<p>{item.pointsTitle}</p>
 							<ReactStars
