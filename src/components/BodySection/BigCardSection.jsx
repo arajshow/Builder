@@ -7,6 +7,7 @@ import { FaAngleDown } from "react-icons/fa";
 import pc from "../../assets/pc.png";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const BigCardSection = () => {
 	const [fullStars, setFullStars] = useState(4);
@@ -55,8 +56,40 @@ const BigCardSection = () => {
 							)}
 							{item.description}
 						</p>
-						<p>Main highlights</p>
-						{item.id === "4" ? <div>ok</div> : <p>{item.heighlights}</p>}
+						<p className="text-lg font-bold">Main highlights</p>
+						{item.id === "4" ? (
+							<div className="flex flex-col">
+								<div className="flex flex-col bg-orange-100 rounded-lg justify-start ml-3 pl-2">
+									{item.heighlights[0].map((data, id) => (
+										<div
+											key={id}
+											className="flex flex-row gap-1 p-2 items-center"
+										>
+											<div className="p-1 rounded-lg bg-white text-blue-500">
+												{data.point}
+											</div>
+											<p className=" text-gray-500 text-[15px]">{data.title}</p>
+										</div>
+									))}
+								</div>
+								<p className="text-lg my-2">Why we love it</p>
+								<div>
+									{item.heighlights[1].map((data, id) => (
+										<div
+											key={id}
+											className="flex flex-row gap-1 p-1 items-center"
+										>
+											<div className=" text-blue-500">
+												<IoCheckmarkCircleOutline />
+											</div>
+											<p className=" text-gray-500 text-[15px]">{data.title}</p>
+										</div>
+									))}
+								</div>
+							</div>
+						) : (
+							<p className="ml-4">{item.heighlights}</p>
+						)}
 
 						<div className="flex flex-row text-blue-500 gap-2 items-center my-2">
 							<p>Show more</p>
