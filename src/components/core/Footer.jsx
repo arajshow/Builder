@@ -46,7 +46,7 @@ const Footer = () => {
 				</div>
 
 				{/* united States */}
-				<div className="lg:block hidden h-[60%] text-slate-300 pr-[8%]">
+				<div className="lg:block hidden h-[60%] text-slate-300 pr-[8%] cursor-pointer">
 					<div className="flex items-center h-full gap-2">
 						<p>United States</p>
 						<FaAngleDown />

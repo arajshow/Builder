@@ -20,7 +20,7 @@ const Card = () => {
 				<p className=" text-gray-400 items-end">{"$49.96"}</p>
 				<p className=" text-pink-300 items-end">{"(20% Off)"}</p>
 			</div>
-			<div className="w-full mx-auto flex  justify-center mb-2 bg-blue-600 items-center text-white rounded-lg p-2">
+			<div className="  cursor-pointer hover:scale-95 transition-all duration-200 w-full mx-auto flex  justify-center mb-2 bg-blue-600 items-center text-white rounded-lg p-2">
 				{" "}
 				View Deal
 			</div>

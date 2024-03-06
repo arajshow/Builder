@@ -31,7 +31,7 @@ const Navbar = () => {
 					{NavbarLinks.map((item, index) => (
 						<li key={index}>
 							<p
-								className={` font-inter text-lg hover:scale-105 transition-all duration-200`}
+								className={` cursor-pointer font-inter text-lg hover:scale-105 transition-all duration-200`}
 							>
 								{item.title}
 							</p>

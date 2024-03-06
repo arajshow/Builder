@@ -37,7 +37,7 @@ const BodyComponent = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-row items-center gap-2">
+				<div className="flex flex-row items-center gap-2 cursor-pointer  hover:scale-105 transition-all duration-200 ">
 					<p className="text-gray-400">Top Relevant</p>
 					<IoChevronDownOutline />
 				</div>

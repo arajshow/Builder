@@ -46,7 +46,7 @@ const BigCardSection = () => {
 					</div>
 
 					{/* main body section */}
-					<div className="w-[50%] mt-5 flex flex-col gap-2">
+					<div className="lg:w-[50%] w-[75%] mt-5 flex flex-col gap-2">
 						<p>
 							<span className="font-semibold">{item.heading}</span>
 							{item.id === "4" ? (
@@ -91,14 +91,14 @@ const BigCardSection = () => {
 							<p className="ml-4">{item.heighlights}</p>
 						)}
 
-						<div className="flex flex-row text-blue-500 gap-2 items-center my-2">
+						<div className=" cursor-pointer  flex flex-row text-blue-500 gap-2 items-center my-2">
 							<p>Show more</p>
 							<FaAngleDown />
 						</div>
 					</div>
 
 					{/* side section */}
-					<div className="w-[18%] flex flex-col items-center justify-between">
+					<div className="w-[18%] lg:flex lg:flex-col hidden items-center justify-between">
 						<div className=" bg-blue-300 flex flex-col justify-center text-blue-900 rounded-b-lg w-[148px] p-3 items-center">
 							<p className="text-3xl mb-3">{item.points}</p>
 							<p>{item.pointsTitle}</p>
@@ -113,7 +113,7 @@ const BigCardSection = () => {
 								fullIcon={<FaStar />}
 							/>
 						</div>
-						<div className="w-full mx-auto flex  justify-center mb-2 bg-blue-600 items-center text-white rounded-lg p-2">
+						<div className="w-full  hover:scale-95 transition-all duration-200  cursor-pointer mx-auto flex  justify-center mb-2 bg-blue-600 items-center text-white rounded-lg p-2">
 							{" "}
 							View
 						</div>
