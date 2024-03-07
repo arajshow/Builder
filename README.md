@@ -1,6 +1,6 @@
 ## Assingment of Radiant Riches LLC
 
-`Objective`: Convert a one-page [Figma design]([https://github.com/facebook/create-react-app](https://www.figma.com/file/Femufc71fBylIysNhm6rKR/NextJs%2FReactJs-Assignment?type=design&node-id=1669-162202&mode=design)) into a NextJS/ReactJS website, focusing on modular components and project structure.
+`Objective`: Convert a one-page [Figma design](https://www.figma.com/file/Femufc71fBylIysNhm6rKR/NextJs%2FReactJs-Assignment?type=design&node-id=1669-162202&mode=design) into a NextJS/ReactJS website, focusing on modular components and project structure.
 Requirements:
 
 You can visit the website from [here](https://web-builder-henna.vercel.app/)
